@@ -33,3 +33,6 @@ jobs:
 	   mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy\
 	   -Dclient.id="${{ secrets.ClIENT_ID}}"\
 	   -Dclient.secret="${{ secrets.ClIENT_SECRET}}"
+       
+       
+     
