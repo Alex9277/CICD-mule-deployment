@@ -124,6 +124,16 @@ output application/json
         </error-handler>
     </flow>
     <flow name="post:\account:application\json:facebook-account-api-config">
-        <logger level="INFO" message="post:\account:application\json:facebook-account-api-config" />
+        <ee:transform doc:name="Transform Message" doc:id="2a5238d6-192a-4d4f-9c4b-dc39b6a7028c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": "this was success"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" message="post:\account:application\json:facebook-account-api-config" />
     </flow>
 </mule>
