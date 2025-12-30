@@ -1,0 +1,13 @@
+<? xml version="1.0"?>
+<settings>
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+  </pluginGroups>
+  <servers>
+    <server>
+	 <id>samRepo</id>
+	 <userName>~~~Client~~~</userName>
+	 <password>${client.id}~?~${client.secret}</password>
+	</server> 
+  </servers>
+</settings>
