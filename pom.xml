@@ -31,7 +31,6 @@
 				<extensions>true</extensions>
 				 <configuration>
         <classifier>mule-application</classifier>
-        <deployment>
 		<cloudHub2Deployment>
             <uri>https://anypoint.mulesoft.com</uri>
 			<provider>MC</provider>
@@ -46,8 +45,7 @@
 			<deploymentSetting>
 			    <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
 			</deploymentSetting>
-        </cloudHub2Deployment>
-        </deployment>
+        </cloudHub2Deployment>       
     </configuration>
 			</plugin>
 		</plugins>
