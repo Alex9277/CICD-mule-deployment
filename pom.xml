@@ -4,7 +4,7 @@
 
 	<groupId>cf4627a3-c356-4b1f-a727-9ce9eacee37e</groupId>
 	<artifactId>facebook-repo</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>facebook-repo</name>
@@ -39,7 +39,7 @@
 			<server>samRepo</server>
 			<applicationName>${project.artifactId}</applicationName>
 			<releaseChannel>Edge</releaseChannel>
-			<muleVersion>4.8.1</muleVersion>
+			<muleVersion>4.10.0</muleVersion>
 			<replicas>1</replicas>
 			<vCores>0.1</vCores>
 			<deploymentSetting>
