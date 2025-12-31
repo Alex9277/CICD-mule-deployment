@@ -6,7 +6,7 @@
   <servers>
     <server>
 	 <id>samRepo</id>
-	 <username>~~~Client~~~</userName>
+	 <username>~~~Client~~~</username>
 	 <password>${client.id}~?~${client.secret}</password>
 	</server> 
   </servers>
