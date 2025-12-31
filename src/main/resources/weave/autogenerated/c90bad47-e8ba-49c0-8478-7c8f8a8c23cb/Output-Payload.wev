@@ -1,0 +1,10 @@
+%dw 2.0
+
+type auto_c90bad47_e8ba_49c0_8478_7c8f8a8c23cb_Output_Payload = {|
+  id: String, 
+  username: String, 
+  email: String, 
+  phone: String, 
+  status: String
+|}
+

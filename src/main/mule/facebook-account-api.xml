@@ -123,17 +123,25 @@ output application/json
             </on-error-propagate>
         </error-handler>
     </flow>
-    <flow name="post:\account:application\json:facebook-account-api-config">
-        <ee:transform doc:name="Transform Message" doc:id="2a5238d6-192a-4d4f-9c4b-dc39b6a7028c" >
+    <flow name="get:\account:application\json:facebook-account-api-config">
+        <flow-ref doc:name="Flow Reference" doc:id="5a7498d5-db18-4667-bad1-fa35d1df4d4a" name="facebook-account-apiSub_Flow"/>
+		<logger level="INFO" message="post:\account:application\json:facebook-account-api-config" />
+    </flow>
+	<sub-flow name="facebook-account-apiSub_Flow" doc:id="c90bad47-e8ba-49c0-8478-7c8f8a8c23cb" >
+		<ee:transform doc:name="Transform Message" doc:id="2d0ff0cb-9b6d-4e19-ba8c-a527609ec3c7" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	"message": "this was success"
+  id: "fb_1029384756",
+  username: "john.doe",
+  email: "john.doe@example.com",
+  phone: "+1-555-987-6543",
+  status: "ACTIVE"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<logger level="INFO" message="post:\account:application\json:facebook-account-api-config" />
-    </flow>
+		<logger level="INFO" doc:name="Logger" doc:id="95f8760e-c17a-4c34-9653-bb589d8814d1" message='"created" '/>
+	</sub-flow>
 </mule>
