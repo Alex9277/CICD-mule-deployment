@@ -4,7 +4,7 @@
 
 	<groupId>cf4627a3-c356-4b1f-a727-9ce9eacee37e</groupId>
 	<artifactId>facebook-repo</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>facebook-repo</name>
